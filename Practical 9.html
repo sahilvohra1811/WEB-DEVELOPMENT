@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICAL 9</title>
+    <style>
+        input{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practical 9 : Reverse a string </h1>
+    <label>Enter a string : </label>
+    <input type="text" id="str"><br>
+    <label>Reverse string : </label>
+    <input type="text" id="rstr"><br>
+    <button onclick="reverse();">REVERSE</button>
+
+    <script>
+        function reverse(){
+            let string = document.getElementById("str").value;
+            let rstr = '';
+            for(let i = string.length-1;i>=0;i--){
+                rstr = rstr + string[i];
+            }
+            document.getElementById("rstr").value = rstr;
+        }
+
+    </script>
+</body>
+</html>

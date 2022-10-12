@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 1</title>
+</head>
+<body>
+    <label for="number" >Enter number for finding a square root : </label>
+    <input type="number"id="num1" style="margin: 10px;"><br>
+    <label for="answer">Your answer is : </label>
+    <input type="number" id="ans" style="margin: 10px;"><br>
+    <button onclick="ans();">Generate Answer</button>
+
+    <script>
+        function ans(){
+            let num1 = document.getElementById("num1").value;
+            let ans = num1 ** (1/2);
+            document.getElementById("ans").value = ans;
+        }
+    </script>
+</body>
+</html>

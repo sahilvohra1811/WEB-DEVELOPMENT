@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 8</title>
+    <style>
+        input {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pracical 8 : Sort Words in alphabetic order.</h1>
+    <label>Enter a Word : </label>
+    <input type="text" id="word">
+    <button onclick="sort();">SORT</button>
+
+    <script>
+        function sort() {
+            let words = document.getElementById("word").value;
+            let word = words.split(' ');
+            let s = word.sort();
+            alert(s);
+
+        }
+    </script>
+</body>
+
+</html>

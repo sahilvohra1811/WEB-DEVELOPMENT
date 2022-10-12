@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICAL 2</title>
+    <style>
+        input {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Practical 2 : Swap Two variable.</h1>
+        <label for="num1">Enter Number A : </label>
+        <input type="number" name="" id="num1"><br>
+        <label for="num2">Enter Number B : </label>
+        <input type="number" name="" id="num2"><br>
+        <label for="">After swap : </label> A = <input type="number" name="" id="a"> B = <input type="number" name="" id="b"><br><br>
+        <button onclick="swap();">SWAP NUMBERS</button>
+    </div>
+
+    <script>
+        function swap() {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+            document.getElementById("a").value = num2;
+            document.getElementById("b").value = num1;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICAL 13</title>
+    <style>
+        input{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practical 13 : Print string in small and capital letter.</h1>
+    <label>Enter any string : </label>
+    <input type="text" id="str"><br>
+    <label>Entered string in small letter :</label>
+    <input type="text" id="small"><br>
+    <label>Entered string in capital letter :</label>
+    <input type="text" id="capital"><br>
+    <button onclick="print();">PRINT</button>
+    <script>
+        function print(){
+            let string = document.getElementById("str").value;
+            document.getElementById("small").value = string.toLowerCase();
+            document.getElementById("capital").value = string.toUpperCase();
+        }
+    </script>
+</body>
+</html>

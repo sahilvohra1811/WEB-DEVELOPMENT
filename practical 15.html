@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICAL 15</title>
+    <style>
+        input{
+            margin: 10px;
+        }
+    </style>
+        
+</head>
+<body>
+    <h1>Practical 15 : Write javascript program to check grade of the student.</h1>
+
+        <h3>STUDENT RESULT</h3>
+        <label>Enter 1st Subject marks : </label>
+        <input type="number" id="marks1"><br>
+        <label>Enter 2nd Subject marks : </label>
+        <input type="number" id="marks2"><br>
+        <label>Enter 3rd Subject marks : </label>
+        <input type="number" id="marks3"><br>
+        <label>Enter 4th Subject marks : </label>
+        <input type="number" id="marks4"><br>
+        <label>Your Total marks are   : </label>
+        <input type="number" id="total"><br>
+        <label>Your percentage</label>
+        <input type="number" id="per"><br>
+        <label>Obtain Grade : </label>
+        <input type="text" id="grd"><br>
+        <button onclick="result();">RESULT</button>
+
+    <script>
+        function result(){
+            let m1 = parseFloat(document.getElementById("marks1").value);
+            let m2 = parseFloat(document.getElementById("marks2").value);
+            let m3 = parseFloat(document.getElementById("marks3").value);
+            let m4 = parseFloat(document.getElementById("marks4").value);
+            let total = m1 + m2 + m3 + m4;
+            document.getElementById("total").value = total;
+            parseFloat(document.getElementById("per").value = total/4); 
+            if(total >= 350){
+                document.getElementById("grd").value = 'A';
+            }
+            else if(total >= 300 && total < 350){
+                document.getElementById("grd").value = 'B';
+            }
+            else if(total >= 250 && total < 300){
+                document.getElementById("grd").value = 'C';
+            }
+            else if(total >= 200 && total < 250){
+                document.getElementById("grd").value = 'D';
+            }
+            else{
+                document.getElementById("grd").value = "Better luck next time!"
+            }
+
+        }
+    </script>
+</body>
+</html>

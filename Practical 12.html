@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICAL 12</title>
+    <style>
+        input{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practical 12 : Write a javascript program to perform below operation on string.</h1>
+    <label>Enter a string : </label>
+    <input type="text" id="str"><br>
+    <label>Total characters are : </label>
+    <input type="number" id="char"><br>
+    <label>Total words are : </label>
+    <input type="number" id="word"><br>
+    <label>Occurence of letter 'a' : </label>
+    <input type="number" id="occurence"><br>
+    <button onclick="find();">FIND</button>
+
+    <script>
+        function find(){
+            let string = document.getElementById("str").value;
+            document.getElementById("char").value = string.length;
+            let word = string.split(' ');
+            document.getElementById("word").value = word.length;
+            let count = 0;
+            for(let i = 0; i <= string.length-1;i++){
+                if(string[i] == 'a'){
+                    count = count +1;
+                }
+            }
+            document.getElementById("occurence").value = count;
+        }
+    </script>
+</body>
+</html>

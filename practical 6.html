@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 6</title>
+    <style>
+        input {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Practical 6 : Convert Decimal to binary</h1>
+    <label for="">Enter a Decimal Number : </label>
+    <input type="number" id="num"><br>
+    <label for="">bin : </label>
+    <input type="number" id="bin"><br>
+    <button onclick="convert();">CONVERT</button>
+
+    <script>
+        function convert() {
+            let num = document.getElementById("num").value;
+            let bin = Number(num).toString(2);
+            document.getElementById("bin").value = bin;
+        }
+    </script>
+</body>
+
+</html>

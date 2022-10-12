@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICAL 10</title>
+    <style>
+        input{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practical 10 : Check the number of occurence of character in given string.</h1>
+    <label>Enter a string : </label>
+    <input type="text" id="str"><br>
+    <label>Enter character to find its occurence : </label>
+    <input type="text" id="char"><br>
+    <label>Occurence is : </label>
+    <input type="number" id="occurence"><br>
+    <button onclick="find_occurence();">FIND OCCURENCE</button>
+
+    <script>
+        function find_occurence(){
+            let string = document.getElementById("str").value;
+            let char = document.getElementById("char").value;
+            let count = 0;
+            for(let i = 0; i <= string.length-1;i++){
+                if(string[i] == char){
+                    count = count +1;
+                }
+            }
+            document.getElementById("occurence").value = count;
+        }
+    </script>
+</body>
+</html>
